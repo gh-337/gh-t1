@@ -9,8 +9,80 @@
 </head>
 
 <body>
-    <h1 class="gh">gh</h1>
-    <!-- kkk -->
+    <form action="#" method="get" enctype="multipart/form-data">
+        <div>
+            <h1>РЕгистр</h1>
+            <div>
+                <p>Имя</p>
+
+                <div> <input placeholder="iмя" tabindex="1" name="username" type="text"></div>
+            </div>
+
+            <div>
+                <p>Пароль</p>
+
+                <div><input placeholder="пароль" tabindex="2" name="password" type="password"></div>
+            </div>
+
+            <div>
+                <p>Телефон</p>
+
+                <div><input placeholder="телефон" tabindex="3" name="telephon" type="tel"></div>
+            </div>
+            <div>
+                <p>Пол</p>
+
+                <div><input checked tabindex="4" type="radio" name="gender" value="m">M</div>
+                <div><input tabindex="4" type="radio" name="gender" value="f">Ж</div>
+                <div><input tabindex="4" type="radio" name="gender" value="n">Не опридилился</div>
+            </div>
+
+            <div>
+                <p>Имущество</p>
+
+                <div>
+                    <p>
+                        <input tabindex="5" checked type="checkbox" name="velik">велик
+                    </p>
+                    <p>
+                        <input tabindex="6" type="checkbox" name="car" value="yes">машина
+                    </p>
+                    <p>
+                        <input tabindex="7" disabled type="checkbox" name="hous" value="yes">квартира
+                    </p>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <p>доп Инфо</p>
+                <textarea tabindex="8" name="dopInfo"></textarea>
+            </div>
+
+            <div>
+                <p>прикрипите фото</p>
+                <input tabindex="9" type="file" name="foto">
+            </div>
+
+            <div>
+                <p>любимий цвет</p>
+                <select tabindex="10" name="color">
+                    <option value="reg">красний</option>
+                    <option value="blu">синий</option>
+                    <option selected value="yellow">жолтий</option>
+                    <option value="no">ничего из више переличеного</option>
+                </select>
+            </div>
+
+            <div>
+                <p>ну шо, нормально всьо?</p>
+                <button tabindex="11" type="submit">отправить</button>
+                <button type="reset">очистить</button>
+            </div>
+        </div>
+    </form>
+
 
 </body>
 
