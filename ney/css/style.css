@@ -87,3 +87,50 @@ h6 {
 .arial {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
+.fonz30 {
+    font-size: 30px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.weight {
+    font-weight: 700;
+}
+
+.cllor {
+    font-size: 10px;
+    color: blue;
+}
+
+.textRight {
+    text-align-last: right;
+}
+
+.decoratin {
+    text-decoration: line-through;
+}
+
+.shadow {
+    text-shadow: 1px 3px 5px #000;
+}
+
+.uppercase {
+    text-transform: capitalize;
+}
+
+.ident {
+    text-indent: 50px;
+}
+
+.lspaice {
+    letter-spacing: 5px;
+}
+
+.wordSpacing {
+    word-spacing: 50px;
+}
+
+.
