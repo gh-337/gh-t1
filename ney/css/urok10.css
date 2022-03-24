@@ -82,69 +82,81 @@ select {
 /* ----скиданя/обнулення---- */
 
 body {
-    padding: 30px;
+    font-family: "Arial";
+    background: #fff;
+    font-size: 20px;
+    line-height: 36px;
 }
 
-.block {
-    margin: 0 0 30px 0;
+.all {
+    margin: 20px 0 0px 20px;
 }
 
-.block p {
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0 0 20px 0;
+.list-1 {
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000;
 }
 
-.link {
-    color: red;
-    text-decoration: none;
+.list :nth-child(1) {
+    text-decoration: line-through;
 }
 
-.link:visited {
-    color: #000;
+.list :nth-child(2) {
+    font-weight: 700;
 }
 
-.link:hover {
-    text-decoration: underline;
-    color: blue;
+.list :nth-child(3) {
+    font-style: oblique;
 }
 
-.link:active {
-    color: #fff;
-}
-
-.text-imput {
-    border: 1px solid #666;
-    height: 50px;
-    padding: 0 15px;
-    font-size: 18px;
-    width: 300px;
-}
-
-.text-imput:focus {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.text-button {
-    display: block;
-    width: 100px;
-    height: 50px;
-    background-color: #666;
-    margin: 10px 0 30px 200px;
-    font-size: 18px;
-    color: #fff;
+.list :nth-child(4) {
     text-transform: uppercase;
 }
 
-.text-button:hover {
-    color: blue;
-    background: #000;
+.list :nth-child(1):hover {
+    text-decoration: none;
 }
 
-.list {
+.list :nth-child(2):hover {
+    font-weight: normal;
+    color: purple;
 }
 
-.list li {
-    font-size: 18px;
-    margin: 0 0 15px 0;
+.list :nth-child(3):hover {
+    font-style: normal;
+}
+
+.list :nth-child(4):hover {
+    text-transform: none;
+}
+
+.center-butt {
+    text-align: center;
+}
+
+.button {
+    background: green;
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+}
+
+.button:hover {
+    background: #aaa;
+}
+
+.button:active {
+    background: #fff;
+}
+
+.form-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.in-text:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }

@@ -1,0 +1,238 @@
+/* сброс стилей */
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* сброс стилей  */
+
+/* body {
+    padding: 30px;
+}
+
+.text {
+    font-size: 23px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+
+.text::first-line {
+    background: #000;
+    color: blue;
+}
+
+.text::first-letter {
+    color: green;
+    font-size: 40px;
+}
+
+.list {
+}
+
+.list li {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.list li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: red;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list li:hover::before {
+    background-color: blue;
+} */
+
+body {
+    padding-top: 30px;
+}
+
+.list-block {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 30px; */
+}
+
+.list-1 {
+    text-align: left;
+    font-size: 24px;
+}
+
+.list-1 li::before {
+    content: url(/gh-t1/img/svg/li.svg);
+    /* background-image: url(/gh-t1/img/svg/li.svg);
+    background-repeat: no-repeat; */
+    /* background-position: 0 7px;
+    padding-left: 18px; */
+}
+
+.list-1 li:nth-child(1) {
+    text-decoration: line-through;
+}
+.list-1 li:nth-child(1):hover {
+    text-decoration: none;
+}
+
+.list-1 li:nth-child(2) {
+    font-weight: 700;
+}
+.list-1 li:nth-child(2):hover {
+    font-weight: normal;
+    color: #d55a5a;
+}
+
+.list-1 li:nth-child(3) {
+    font-style: oblique;
+}
+.list-1 li:nth-child(3):hover {
+    font-style: normal;
+}
+
+.list-1 li:nth-child(4) {
+    text-transform: uppercase;
+}
+.list-1 li:nth-child(4):hover {
+    text-transform: lowercase;
+}
+.list-1 li:nth-child(4):hover::first-letter {
+    text-transform: none;
+}
+
+.button1 {
+    margin-top: 15px;
+    width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.button-full {
+    background-color: #80b7b3;
+    width: 150px;
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+.button1::after {
+    content: url(/gh-t1/img/svg/li.svg);
+}
+
+.button-full:hover {
+    background-color: #3a5855;
+}
+
+.button-full:active {
+    background-color: #818181;
+}
+
+.text1 {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.text1 p {
+    width: 650px;
+}
+
+.text1 p::first-line {
+    color: green;
+}
+
+.text2 {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text2 p {
+    width: 650px;
+}
+
+.text2 p::first-letter {
+    color: green;
+}
